@@ -25,6 +25,10 @@ public class TwitterStreamLoader implements UserStreamListener {
             return;
         }
 
+        if(null == status || "".equals(status.getText())) {
+            System.out.println("There is no contents");
+        }
+
         if(ex.extractReplyScreenname(status.getText()).matches(botName)) {
             onMentionText(status.getText().replace("@"+botName, "").trim(),
                           status.getId(),
