@@ -29,6 +29,11 @@ public class TweetShooter {
     public void send(String text, long i, String userName) {
         try {
             String[] candidates = text.split("\\s+");
+            if(candidates.length <= 1) {
+                //single candidate matched
+                return;
+            }
+
             String reply = "@" + userName + " " +
                            candidates[rnd.nextInt(candidates.length)];
             if (i < 1) {

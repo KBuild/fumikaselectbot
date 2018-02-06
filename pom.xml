@@ -6,7 +6,7 @@
 
     <groupId>kr.kbuild</groupId>
     <artifactId>fumikaselectbot</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
 
     <build>
@@ -43,13 +43,13 @@
         <dependency>
             <groupId>org.twitter4j</groupId>
             <artifactId>twitter4j-core</artifactId>
-            <version>4.0.5</version>
+            <version>4.0.6</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-stream -->
         <dependency>
             <groupId>org.twitter4j</groupId>
             <artifactId>twitter4j-stream</artifactId>
-            <version>4.0.5</version>
+            <version>4.0.6</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.twitter/twitter-text -->
         <dependency>
